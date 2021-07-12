@@ -1,0 +1,221 @@
+/*CSS reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+
+body{
+    background-color:tan;
+    font-size:1.6rem;
+}
+
+h1{
+    display:flex;
+    justify-content:flex-start;
+    font-size:2rem;
+}
+
+p{
+    font-size:1.6rem;
+}
+
+/*Header Section Styles*/
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+}
+
+nav a{
+    text-decoration:none;
+}
+
+nav button{
+    padding:2%;
+    width:20%;
+    margin:1% 0;
+}
+
+.text{
+    font-family:sans-serif;
+    font-size:2rem;
+}
+
+.projects{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:url(https://picsum.photos/400);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    height:500px;
+}
+
+.projects-button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:white;
+    color:black;
+    border:1px solid black;
+    width:20%;
+}
+
+.projects-button:hover{
+    background-color:black;
+    color:white;
+    border:1px solid white;
+}
+
+button a{
+    text-decoration:none;
+    color:black;
+}
+
+/*Portfolio Element Style*/
+section{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:space-around;
+    flex-wrap:wrap;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:20px;
+}
+
+.portfolio-element{
+    text-align:center;
+}
+
+/*Footer Styles*/
+footer{
+    background-color:lightgrey;
+    padding:20px;
+    text-align:center;
+}
+
+footer a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    border:1px solid black;
+    padding:10px;
+    margin:10px;
+}
+
+/*
+Media Queries
+
+mobile first - scaling up = min-width
+desktop first - scaling down = max-width
+*/
+/*Tablets*/
+@media(max-width: 800px){ /*apply these styles to anything that is 800px or smaller*/
+    /*all of the styles for 800px go here*/
+    nav{
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    .projects{
+        flex-wrap:wrap;
+    }
+    .image{
+        justify-content:flex-end;
+    }
+    .row{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+    section{
+        flex-wrap:wrap;
+        height:auto;
+    }
+    .portfolio-element{
+        display:flex;
+        flex-wrap:wrap;
+        width:40%;
+    }
+    .one{
+        order:1;
+    }
+    .two{
+        order:2;
+    }
+    .three{
+        order:3;
+    }
+    .four{
+        order:4;
+    }
+    .five{
+        order:5;
+    }
+    .six{
+        order:6;
+    }
+}
+
+/*Phones*/
+@media(max-width: 500px){
+
+}
