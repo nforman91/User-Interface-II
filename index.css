@@ -96,19 +96,11 @@ nav button{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:500px;
-}
-
-.image{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background:url(https://picsum.photos/500);
+    background:url(https://picsum.photos/400);
     background-repeat:no-repeat;
     background-size:cover;
     color:white;
-    font-size:large;
+    height:500px;
 }
 
 .projects-button{
